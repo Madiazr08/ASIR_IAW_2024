@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Ejercicio 3">
+            <meta name="author" content="Miguel Angel">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Ejercicio 4</title>
+
+        </head>
+        <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px">
+
+            <header style="background-color: #007BFF; color: white; padding: 10px 0; text-align: center">
+                <h1>Ejercicio 4</h1>
+                    <p>HTML con listados, articulos anidados y otras opciones</p>
+            </header>
+
+            <!--En esta sección vamos a utilizar los distintos tipos de listados ("ul" y "ol")-->
+
+            <article style="background: white; border: 1px solid #ccc; margin: 20px 0; padding: 15px">
+                <h2 style="color: #333;">Sección 1: Listados</h2>
+                    <p>Esta sección incluye diferentes tipos de listados:</p>
+
+                <h3>Listado no ordenado:</h3>
+                    <ul style="list-style-type: disc; margin: 10px 0; padding-left: 20px">
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ul>
+
+                <h3>Listado ordenado:</h3>
+                    <ol style="margin: 10px 0; padding-left: 20px">
+                        <li>Primer paso</li>
+                        <li>Segundo paso</li>
+                        <li>Tercer paso</li>
+                    </ol>
+            </article>
+
+            <!--<article> suele ir anidado en <section> a modo de listados, pero no hay ninguna obligación a este respecto. Podemos incluirlo en cualquier otro elemento estructural.-->
+
+            <article style="background: white; border: 1px solid #ccc; margin: 20px 0; padding: 15px">
+                <h2>Sección 2: Articulos Anidados</h2>
+            <article>
+                <h3>Subsección A</h3>
+                    <p>Aquí hay un artículo anidado.</p>
+            </article>
+            <article>
+                <h3>Subsección B</h3>
+                    <p>Otro artículo anidado con más contenido.</p>
+            </article>
+            </article>
+
+            <!--Aquí utilizaremos distintos tipos de elementos para cambiar la semántica a nivel de texto.--> 
+
+            <article style="background: white; border: 1px solid #ccc; margin: 20px 0; padding: 15px">
+                <h2>Sección 3: Ejemplos de Etiquetas</h2>
+                    <p>Usando diferentes etiquetas de texto:</p>
+                        <p><strong>Texto en negrita</strong>, <em>texto en cursiva</em>, y <mark>texto resaltado</mark>.</p>
+    
+            <!--Tanto Progress como Meter son elementos con los que podremos marcar medidas y valores.--> 
+
+                <h3>Progress y Meter</h3>
+                    <label for="progress">Progreso</label>
+                    <progress id="progress" value="70" max="100">70%</progress>
+                        <br>
+                    <label for="meter">Medidor</label>
+                    <meter id="meter" value="0.8" min="0" max="1">80%</meter>
+    
+            <!--Aqui con la etiqueta "time" escribiremos la fecha-->
+
+                <h3>Ejemplo de Fecha</h3>
+                    <time datetime="2024-11-04">4 de noviembre de 2024</time>
+            </article>
+
+        </body>
+</html>
