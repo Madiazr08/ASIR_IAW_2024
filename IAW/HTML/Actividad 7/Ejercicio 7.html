@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Ejercicio 7">
+            <meta name="author" content="Miguel Angel">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Ejercicio 6</title>
+
+        </head>
+        <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px">
+
+            <header style="background-color: #007BFF; color: white; padding: 10px 0; text-align: center">
+                <h1>Ejercicio 7</h1>
+                    <p>HTML con tablas complejas</p>
+            </header>
+
+            <!--En esta sección vamos a insertar una tabla-->
+
+            <article style="background: white; border: 1px solid #ccc; margin: 20px 0; padding: 15px">
+                <h2 style="color: #333; text-align: center;">Tabla Compleja</h2>
+                
+                <table style="text-align: center; margin: 0 auto; border: #b2b2b2 1px solid; width: 50%;">
+
+            <!--Añadimos una cabecera a la tabla-->
+        
+                    <caption>Tabla con estilos - Caption</caption>
+            
+            <!--Aqui vamos utilizar las secciones thead, tbody y tfoot-->
+
+                        <thead>
+                            <tr>
+                                <th colspan="3" style="border: black 1px solid;">Ejemplo de título</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td rowspan="2" style="border: black 1px solid;">Esto es un Rowspan</td>
+                                <td style="border: black 1px solid;">Cuatro</td>
+                                <td style="border: black 1px solid;">Siete</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" style="border: black 1px solid;">Esto es un Colspan</td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" style="border: black 1px solid;">Esto es un Colspan de 3</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <td colspan="3">Esto es el píe de la tabla</td>
+                        </tfoot>
+                </table>
+               
+            </article>
+
+            
+        </body>
+</html>
