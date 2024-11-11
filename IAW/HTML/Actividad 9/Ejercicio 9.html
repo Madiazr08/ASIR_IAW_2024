@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Ejercicio 9">
+            <meta name="author" content="Miguel Angel">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Ejercicio 9</title>
+
+        </head>
+        <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px">
+
+            <header style="background-color: #007BFF; color: white; padding: 10px 0; text-align: center">
+                <h1>Ejercicio 9</h1>
+                    <p>Formulario complejo en HTML</p>
+            </header>
+            
+            <article style="background: white; border: 1px solid #ccc; margin: 20px 0; padding: 15px">
+                <h2 style="color: #333; text-align: center;">Formulario Complejo</h2>
+
+                <label for="correo">Correo electrónico</label>
+                    <input id="correo" name="correo" type="email"><br><br>
+
+                <label for="web"></label>Sitio web</label>
+                    <input id="web" name="webs" type="url"><br><br>
+
+                <label for="tele">Teléfono</label>
+                    <input id="tele" name="tele" type="tel"><br><br>
+
+                <!--Este input type permitirá elegir un rango manualmente y gracias a script nos dará el valor seleccionado-->
+
+                <label for="rango">Rango</label>
+                    <input type="range" min="0" max="20" step="2" name="rango" id="rango">
+                    <input type="number" id="numero" name="numero">
+                    <script>
+                    const rango = document.getElementById("rango")
+                    const numero = document.getElementById("numero")
+                    rango.onchange = function(){
+                    numero.value = rango.value;
+                    }
+                    </script><br><br>
+                
+                <!--Los siguientes "input type" nos darán la opción de definir fechas y horas en diferentes formas-->
+
+                <label for="fecha">Fecha: </label>
+                    <input id="fecha" name="fecha" type="date">
+                    <br><br>
+                
+                <label for="fechayhora">Fecha y hora: </label>
+                    <input id="fechayhora" name="fechayhora" type="datetime">
+                    <br><br>
+                    
+                <label for="fechayhoralocal">Fecha y hora local: </label>
+                    <input id="fechayhoralocal" name="fechayhoralocal" type="datetime-local">
+                    <br><br>
+                
+                <label for="hora">Hora: </label>
+                    <input id="hora" name="hora" type="time">
+                    <br><br>
+
+                <label for="mes">Mes: </label>
+                    <input id="mes" name="mes" type="month"><br><br>
+
+                <!--Este input type permitirá elegir un color en formato hexadecimal-->
+                    
+                <label for="colorfd">Elegir color</label>
+                    <input id="colorfd" name="colorfd" type="color"><br><br>
+
+                <!--Con este input type nos drá ya las opcines que podamos elegir para rellenar esta parte del formulario.-->
+
+                <label for="dia">Elige el día de la semana:</label>
+                    <input list="dias" name="dia" id="dia"> 
+
+                        <datalist id="dias">
+                            <option value="Lunes">
+                            <option value="Martes">
+                            <option value="Miércoles">
+                            <option value="Jueves">
+                            <option value="Viernes">
+                            <option value="Sábado">
+                            <option value="Domingo">
+                        </datalist>
+                        
+                    <input type="submit"><br><br>
+
+                <label for="dni">DNI</label>
+                    <input type="text" id="dni" name="dni" pattern="(([X-Z]{1})([-]?)(\d{7})([-
+                    ]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Debes incluir un DNI correcto
+                    con 9 números y la letra en mayúscula">
+                    
+                    <input type="submit"><br><br>
+
+                <!--Con placeholder permitimos que en la fondo de la caja de texto haya una descripción-->   
+
+                <label for="cp">Código postal:</label>
+                    <input type="text" id="cp" name="cp" pattern="/^(?:0[1-
+                    9]|[1-4]\d|5[0-2])\d{3}$/" title="Debes incluir una
+                    Código postal correcto" placeholder="Incluye los 5 número"><br><br>
+
+                <label>Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí">
+                    <input type="text" id="apellido" name="apellido" placeholder="Tus apellidos aquí"><br><br>
+
+                <label for="usuario">Usuario: </label> <input type="text" name="usuario"
+                    id="usuario" required>
+                <label for="clave">Clave: </label><input type="password" name="clave"
+                    id="clave" required>
+                    <input type="submit" value="Enviar"><br><br>
+
+                <label>Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre aquí" autocomplete="off">
+
+                
+        </article>
+
+            
+</body>
+</html>
