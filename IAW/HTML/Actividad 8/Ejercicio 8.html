@@ -28,4 +28,15 @@
                 <label for="tele">Teléfono</label>
                     <input id="tele" name="tele" type="tel">
 
+                <label for="rango">Rango</label>
+                    <input type="range" min="0" max="20" step="2" name="rango" id="rango">
+                    <input type="number" id="numero" name="numero">
+                    <script>
+                    const rango = document.getElementById("rango")
+                    const numero = document.getElementById("numero")
+                    rango.onchange = function(){
+                    numero.value = rango.value;
+                    }
+                    </script>
+                
             </article>
