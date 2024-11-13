@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    background-color: hsla(0, 59%, 47%, 0.5); 
+    color: white; 
+    padding: 10px; 
+    text-align: center;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+li {
+    display: inline; 
+    margin-right: 15px;
+}
+
+#inicio {
+    color: white; 
+    text-decoration: none;
+}
+
+#acerca {
+    color: white; 
+    text-decoration: none;
+}
+
+#contacto {
+    color: white; 
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-top: 20px;
+    background-color: hsl(130, 70%, 67%)
+}
+
+footer {
+    background-color: rgba(66, 105, 128, 0.5); 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%;
+}
