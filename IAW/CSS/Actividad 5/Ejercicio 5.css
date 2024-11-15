@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Doto";
+    src: url("Doto-VariableFont_ROND\,wght.ttf");
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    margin: 0; 
+    padding: 20px
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: radial-gradient( rgb(198, 236, 93), rgb(190, 190, 68),rgb(100, 100, 153));
+    color: white; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+article {
+    font-family: "Doto";
+    background: white;
+    border: 1px solid #ccc; 
+    margin: 20px 0; 
+    padding: 15px;
+    font-style: italic;
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: disc; 
+    margin: 10px 0; 
+    padding-left: 20px
+}
+
+ol {
+    margin: 10px 0; 
+    padding-left: 20px
+}
