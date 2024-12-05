@@ -1,6 +1,11 @@
 @font-face {
+<<<<<<< HEAD
     font-family: ;
     src: url();
+=======
+    font-family: "Doto";
+    src: url("Doto-VariableFont_ROND\,wght.ttf");
+>>>>>>> a9f95a0b3d1a96db4422f2b77d9c6e1ef6304c79
 }
 
 body {
@@ -11,16 +16,26 @@ body {
 }
 
 header {
+<<<<<<< HEAD
+=======
+    font-family: 'Courier New', Courier, monospace;
+    background-image: radial-gradient( rgb(198, 236, 93), rgb(190, 190, 68),rgb(100, 100, 153));
+>>>>>>> a9f95a0b3d1a96db4422f2b77d9c6e1ef6304c79
     color: white; 
     padding: 10px 0; 
     text-align: center;
 }
 
 article {
+<<<<<<< HEAD
+=======
+    font-family: "Doto";
+>>>>>>> a9f95a0b3d1a96db4422f2b77d9c6e1ef6304c79
     background: white;
     border: 1px solid #ccc; 
     margin: 20px 0; 
     padding: 15px;
+<<<<<<< HEAD
 
 }
 
@@ -39,6 +54,9 @@ article {
     margin: 20px 0;
     padding: 15px;
 
+=======
+    font-style: italic;
+>>>>>>> a9f95a0b3d1a96db4422f2b77d9c6e1ef6304c79
 }
 
 h2 {

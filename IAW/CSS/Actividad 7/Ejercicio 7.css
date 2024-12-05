@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    margin: 0; 
+    padding: 20px
+}
+
+header {
+    background-color: hsla(0, 59%, 47%, 0.5); 
+    color: white; 
+    padding: 10px 0; 
+    text-align: center
+}
+
+article.boton {
+    border: 1px solid #ccc; 
+    margin: 20px 0; 
+    padding: 15px;
+    background: lightgreen;
+    transition-property: background;
+    transition-duration: 0.3s;
+
+}
+
+article.boton:hover {
+    background: navy;
+}
+
+
+h2 {
+    color: #333;
+}
